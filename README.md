@@ -13,4 +13,4 @@ Most modern web application infrastructure consists of one or many load balancer
 
 Consider this: In the below diagram, we see some sort of WAF/Load Balancer that sits in front of several API gateways. If the infrstructure is such that the assumption is that illegitemate/unsafe traffic is prevented from hitting the API's via the WAF, then smuggling requests past the WAF enable us to send requests to API endpoints that we were not allowed to send requests from outside the security perimeter.
 
-[application]: /images/application.png
+![Alt text](images/application.png "Application")
