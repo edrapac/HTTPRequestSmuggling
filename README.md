@@ -143,7 +143,7 @@ x=1
 
 ```
 <b> Things to remember for TE.CL</b>
-* Notice that below 0 in the second POST request there are 2 newlines, if you are testing in Burp you need to add those MANUALLY by hitting Enter twice
+* Notice that below 0 in the second POST request there are 2 newlines, which are interpreted as the 2 Carriage Return-Line Feeds required to terminate an HTTP request, if you are testing in Burp you need to add those MANUALLY by hitting Enter twice.
 * Make sure that the `Update Content-Length` option is unchecked in the repeater menu
 
 <b>What to look for:</b> Since this test payload POST's to `/404` the first request to the server should return a `200 OK` and the second request should return a ` 404 not found` 
